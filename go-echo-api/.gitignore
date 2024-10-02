@@ -1,0 +1,40 @@
+# Go build output
+/bin
+/pkg
+
+# Dependency directories
+/vendor
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDEs and editors
+/.idea
+*.sublime-workspace
+.vscode/
+
+# dotenv environment variable files
+.env
+.env.local
+
+# Test coverage
+/coverage
+
+# Temporary files
+*.tmp
+.temp
+
+# Binary files
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Go module cache
+/go.mod
+/go.sum
