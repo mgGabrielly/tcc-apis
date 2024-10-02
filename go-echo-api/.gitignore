@@ -34,7 +34,3 @@ Thumbs.db
 *.dll
 *.so
 *.dylib
-
-# Go module cache
-/go.mod
-/go.sum
