@@ -21,16 +21,14 @@ func ConnectDB() {
 	user := os.Getenv("POSTGRES_USER")
 	password := os.Getenv("POSTGRES_PASSWORD")
 	dbName := os.Getenv("POSTGRES_DB")
-	dbPort := os.Getenv("DB_PORT")
 
-	dsn := "host=localhost user=" + user + " password=" + password + " dbname=" + dbName + " port=" + dbPort + " sslmode=disable"
+	dsn := "host=localhost user=" + user + " password=" + password + " dbname=" + dbName + " port=5432 sslmode=disable"
 
 	DB, err = gorm.Open(postgres.Open(dsn), &gorm.Config{})
 	if err != nil {
 		log.Fatal("Falha ao conectar ao banco de dados:", err)
 	}
 
-	// Migrar as tabelas
 	err = DB.AutoMigrate(&models.Book{}, &models.Genre{})
 	if err != nil {
 		log.Fatal("Falha ao migrar tabelas:", err)
