@@ -24,5 +24,3 @@ $ docker-compose up
 
 $ go run main.go
 ```
-
-### Este projeto está licenciado sob a licença MIT. Consulte o arquivo LICENSE para obter mais informações.
