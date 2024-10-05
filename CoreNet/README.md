@@ -25,5 +25,3 @@ $ dotnet ef database update
 
 $ dotnet run
 ```
-
-### Este projeto está licenciado sob a licença MIT. Consulte o arquivo LICENSE para obter mais informações.
